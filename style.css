@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background: url(images/background.png) no-repeat;
+    background-position: center;
+}
+header nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+
+}
+nav .p-navbar{
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto 20px auto;
+}
+.p-navbar .p-logo{
+    height: 80px;
+    width: 150px;
+}
+.p-logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.p-navbar .p-menu{
+    display: flex;
+}
+.p-navbar .p-menu li{
+    list-style: none;
+    margin: 0px 10px;
+}
+.p-menu li a{
+text-decoration: none;
+font-size: 17px;
+color: #000;
+
+font-weight: 500;
+}
+
+.p-menu li a:hover{
+    color: rgba(0, 0, 0, 0.289);
+}
+
+.p-navbar .p-search-box{
+    position: relative;
+    height: 50px;
+    width: 250px;
+}
+.p-search-box input[type="text"]{
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     left: 0;
+     top: 0;
+     outline: none;
+     border: 2px solid #000;
+     border-radius: 8px;
+     padding: 0px 10px 0px 40px;
+     color: #000;
+     font-size: 18px;
+
+}
+.p-search-box a{
+    position: absolute;
+    left: 10px;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    border-right: 2px solid #000;
+    padding: 0px 5px 0px 0px;
+    color: #000;
+
+}
+
+.p-content{
+    position: absolute;
+    top: 33%;
+    left: 7%;
+}
+
+.p-content .p-text{
+    font-size: 27px;
+    color: #000;
+}
+.p-content .p-name{
+    font-size: 75px;
+    color: #000;
+    margin: -20px 0px 0px -3px;
+}
+.p-content .p-job{
+    font-size:40px;
+    color: #000;
+    display: flex;
+}
+.p-content .p-job .p-typing{
+color: #1de2d1;
+margin-left: 10px;
+animation: typing 5s steps(20) infinite;
+white-space: nowrap;
+overflow: hidden;
+border-right: 4px solid #1de2d1;
+}
+@keyframes typing {
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 20ch;
+    }
+    100%{
+        width: 0ch;
+    }
+
+    
+}
+
+.p-content .btn{
+    position: absolute;
+    left: 135px;
+    top: 220px;
+}
+.p-content .btn button{
+
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background: linear-gradient(135deg, #2afadf 10%, #c346c2 100%);
+    transition: all 0.3s ease;
+}
+.p-content .btn button:hover{
+    background: linear-gradient(-135deg, #2afadf 10%, #c346c2 100%);
+    transform: scale(0.98);
+    
+}
+
+.p-right-image{
+    height: 400px;
+    width: 400px;
+}
+.p-right-image img{
+    position: absolute;
+    height: 95%;
+    right: 0px;
+    bottom: -20px;
+}
+
+header .p-media-icon{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+header .p-media-icon a{
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 8px 0px;
+    color: #000;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.p-media-icon a:hover{
+    opacity: 1;
+}
